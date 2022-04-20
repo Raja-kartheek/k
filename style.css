@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins';
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+header>* {
+    padding: 12px;
+}
+
+nav-bar a {
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 12px;
+}
+
+section {
+    display: flex;
+    animation: slideInFromLeft 1.2s;
+}
+
+.sec-des {
+    padding: 12px;
+}
+
+.sec-des h1 {
+    font-weight: 800;
+    font-size: 90px;
+    animation: slideInFromLeft 1.2s;
+}
+
+.abc {
+    color: red;
+    letter-spacing: 2px;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(22%);
+        transform: scale(.8);
+        opacity: 0;
+    }
+    50% {
+        opacity: .2;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.section-2{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px;
+}
+.mn{
+    padding: 12px;
+    max-width: 320px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+.qs{
+    border: 1px solid black;
+    padding:12px;
+    margin-top: 30px;
+}
+.qs:hover{
+    scale: 1.06;
+    transition: all .2s;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.qs h2{
+    padding:13px;
+}
+.qs p{
+    padding: 12px;
+}
+.qs a{
+    text-decoration: none;
+    color:red;
+    margin: 12px;
+    border: 2px solid black;
+    padding:8px 12px;
+    box-sizing: border-box;
+}
+.qs a:hover{
+    color: red;
+    background-color: black;
+}
+
